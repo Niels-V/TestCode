@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <!-- data-main attribute tells require.js to load
+             scripts/main.js after require.js loads. -->
+    <script src="scripts/jquery-1.6.4.min.js"></script>
+    <script data-main="scripts/main" src="scripts/require.js"></script>
+</head>
+<body>
+    <h1>Test Require.js</h1>
+        <article>
+            <h1>Article</h1>
+            <div>
+                Body text
+            </div>
+        </article>
+        <script type="text/javascript">
+            alert($.fn.jquery);
+        </script>
+    <a onclick="alert($.fn.jquery); return false;" href="#">Test inline version</a> <br />
+    <a href="#" id="attachLink">Test attached version</a>
+</body>
+</html>
